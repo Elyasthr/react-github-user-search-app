@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const App = () => {
+  const [theme,setTheme] = useState('light');
+
+const switchTheme = () => {
+  const newTheme = theme === 'light' ? 'dark' : 'light';
+  setTheme(newTheme);
+}
+
   return (
-    <div>
+    <main data-theme={theme}>
       Bismillah
-    </div>
+      <button onClick={switchTheme}>
+          Switch to {theme === 'light' ? 'dark' : 'light'}
+      </button>
+
+    </main>
   );
 };
 

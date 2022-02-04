@@ -1,0 +1,19 @@
+:root {
+  --backgoundColor: #F6F8FF;
+  --componentsColor: #FEFEFE;
+  --textColor-1: #2B3442;
+  --textColor-2: #4B6A9B;
+  --textColor-3: #697C9A;
+  --buttonColor: #0079FF;
+  --buttonColor-hover: #60ABFF;
+}
+    
+[data-theme='dark'] {
+    --backgoundColor: #141D2F;
+    --componentsColor: #1E2A47;
+    --textColor-1: #FFFFFF;
+    --textColor-2: #FFFFFF;
+    --textColor-3: #FFFFFF;
+    --buttonColor: #0079FF;
+    --buttonColor-hover: #60ABFF;
+}
