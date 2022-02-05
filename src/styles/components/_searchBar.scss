@@ -1,0 +1,28 @@
+.search-bar{
+  width: 327px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: var(--componentsColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: var(--boxShadow-searchBar)
+}
+
+.input-search{
+  width: 184px;
+  height: 25px;
+  border: none;
+  font-weight: $font-reg;
+  font-size: 13px;
+  line-height: 25px;
+  color: var(--textColor-2);
+  background-color: var(--componentsColor);
+  &::placeholder{
+    color: var(--textColor-2);
+    border: none;
+    }
+  &:focus{
+    outline:none!important;
+  }
+}
