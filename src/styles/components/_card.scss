@@ -2,7 +2,70 @@
   width: 327px;
   height: 517px;
   margin-top: 16px;
+  padding: 33px 24px 48px 24px;
   border-radius: 15px;
   background-color: var(--componentsColor);
-  box-shadow: var(--boxShadow-searchBar)
+  box-shadow: var(--boxShadow-searchBar);
+
+  .card-header{
+    display: flex;
+  
+    img{
+      width: 70px;
+      height: 70px;
+      margin-right: 19.5px;
+      background-color: var(--backgroundColor);
+      border-radius: 50%;
+    }
+  
+    .card-user{
+      h5{
+        margin-top: 6px;
+      } 
+    }
+  }
+
+  .card-body{
+    p{
+      margin-top: 35px;
+    }
+
+    .card-stats{
+      background-color: var(--backgroundColor);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      padding: 18px 14px;
+      margin: 23px 0;
+    }
+
+    .user-stat{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .card-footer{
+    .user-infos{
+      display: flex;
+      margin-bottom: 16px;
+    }
+    
+    svg{
+      margin-right: 13px;
+    }
+
+    h5{
+      color: var(--textColor-2);
+    }
+    .h5-city{
+      margin-left: 6px;
+    }
+  }
 }
+
+

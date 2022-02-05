@@ -26,6 +26,7 @@ $font-bold: 700;
 }
 
 h1{
+  color: var(--textColor-1);
   font-weight: $font-bold;
   font-size: 16px;
   line-height: 24px;
@@ -41,6 +42,7 @@ h1{
 }
 
 h2{
+  color: var(--textColor-1);
   font-weight: $font-bold;
   font-size: 16px;
   line-height: 24px;
@@ -56,6 +58,7 @@ h2{
 }
 
 h3{
+  color: var(--buttonColor);
   font-weight: $font-reg;
   font-size: 13px;
   line-height: 19px;
@@ -71,6 +74,7 @@ h3{
 }
 
 h4{
+  color: var(--textColor-2);
   font-weight: $font-reg;
   font-size: 11px;
   line-height: 16px;
@@ -85,7 +89,15 @@ h4{
   }
 }
 
+h5{
+  color: var(--textColor-3);
+  font-weight: $font-reg;
+  font-size: 13px;
+  line-height: 19px;
+}
+
 p{
+  color: var(--textColor-2);
   font-weight: $font-reg;
   font-size: 13px;
   line-height: 25px;

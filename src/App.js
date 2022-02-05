@@ -23,7 +23,7 @@ const switchTheme = () => {
         </div>
       </div>
       <SearchBar />
-      <Card />
+      <Card theme={theme}/>
       </div>
     </main>
   );
