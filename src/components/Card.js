@@ -7,9 +7,11 @@ import FooterCard from './FooterCard';
 const Card = ({theme,userId}) => {
 
   const [userData,setUserData] = useState({});
-  const neededValue = ['login','avatar_url','name','company','blog','location','bio','twitter_username','public_repos','followers','following','created_at'];
+  
 
   useEffect(()=>{
+    const neededValue = ['login','avatar_url','name','company','blog','location','bio','twitter_username','public_repos','followers','following','created_at'];
+
     axios
       .get('https://api.github.com/users/'+ userId)
       .then((res) => {
