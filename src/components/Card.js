@@ -4,9 +4,8 @@ import HeaderCard from './HeaderCard';
 import BodyCard from './BodyCard';
 import FooterCard from './FooterCard';
 
-const Card = ({theme}) => {
-//faire un use state avec pour valeur paar default le truc otocat comme demander
-  const [userId,setUserId] = useState('octocat');
+const Card = ({theme,userId}) => {
+
   const [userData,setUserData] = useState({});
   const neededValue = ['login','avatar_url','name','company','blog','location','bio','twitter_username','public_repos','followers','following','created_at'];
 
@@ -20,7 +19,7 @@ const Card = ({theme}) => {
         setUserData(dataObject);
       })
       .catch((err) => console.log(err))
-  },[])
+  },[userId])
 
   return (
     <div className='card'>
