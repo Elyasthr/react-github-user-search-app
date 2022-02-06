@@ -1,6 +1,6 @@
 .card{
   width: 327px;
-  height: 517px;
+  height: auto;
   margin-top: 16px;
   padding: 33px 24px 48px 24px;
   border-radius: 15px;
@@ -28,10 +28,27 @@
   .card-body{
     .bio{
       margin-top: 35px;
+      min-height: 75px;
+      max-height: 100px;
+      overflow-wrap: break-word;
+      overflow: auto;
     }
 
     .no-bio{
       color: #99ABC6;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--componentsColor); 
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--backgroundColor); 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--switchHover)
     }
 
     .card-stats{

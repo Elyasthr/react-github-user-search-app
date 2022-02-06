@@ -6,7 +6,6 @@ const App = () => {
   const [theme,setTheme] = useState('light');
   const [userId,setUserId] = useState('octocat');
   const [errorMessage,setErrorMessage] = useState();
-  console.log(errorMessage)
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
