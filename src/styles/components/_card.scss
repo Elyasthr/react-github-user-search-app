@@ -26,8 +26,12 @@
   }
 
   .card-body{
-    p{
+    .bio{
       margin-top: 35px;
+    }
+
+    .no-bio{
+      color: #99ABC6;
     }
 
     .card-stats{
@@ -53,17 +57,23 @@
     .user-infos{
       display: flex;
       margin-bottom: 16px;
-    }
-    
-    svg{
-      margin-right: 13px;
+
+      svg{
+        margin-right: 13px;
+      }
+  
+      h5{
+        color: var(--textColor-2);
+      }
+      .h5-city{
+        margin-left: 6px;
+      }
     }
 
-    h5{
-      color: var(--textColor-2);
-    }
-    .h5-city{
-      margin-left: 6px;
+    .not-available{
+      h5{
+        color: #A5B4CC; 
+      }
     }
   }
 }
