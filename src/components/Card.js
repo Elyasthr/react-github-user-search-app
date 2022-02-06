@@ -8,7 +8,7 @@ const Card = (props) => {
 
   const {theme,userId,onChange} = props
   const [userData,setUserData] = useState({});
-
+  
   useEffect(()=>{
     const neededValue = ['login','avatar_url','name','company','blog','location','bio','twitter_username','public_repos','followers','following','created_at'];
     axios
