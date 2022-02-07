@@ -12,9 +12,11 @@
   }
   @include media-min("desktop") {
     width: 730px;
+    padding: 48px;
   }
 
   .card-header{
+    position: relative;
     display: flex;
   
     img{
@@ -25,10 +27,6 @@
       border-radius: 50%;
       @include media-min("tablet") {
         margin-right: 40px;
-        width: 117px;
-        height: 117px;
-      }
-      @include media-min("desktop") {
         width: 117px;
         height: 117px;
       }
@@ -47,19 +45,31 @@
           margin-top: 0;
         }
       }
+      @include media-min("desktop"){
+        h5{
+          position: absolute;
+          top: 8.5px;
+          right: 0;
+        }
+      }
     }
   }
 
   .card-body{
-    .bio{
-      margin-top: 33px;
+    margin-top: 33px;
+    @include media-min("tablet"){
+      margin-top: 24px;
+    }
+    @include media-min("desktop"){
+      width: 480px;
+      margin-left: 160px;
+      margin-top: -35px;
+    }
+    .bio{  
       min-height: 50px;
       max-height: 100px;
       overflow-wrap: break-word;
       overflow: auto;
-      @include media-min("tablet"){
-        margin-top: 24px;
-      }
     }
 
     .no-bio{
@@ -115,6 +125,14 @@
         display: flex;
         flex-direction: column;
         margin-right: 65px;
+      }
+    }
+    @include media-min("desktop"){
+      margin-left: 95px;
+      margin-top: 0;
+      .user-infos-bloc{
+        margin-left: 65px;
+        margin-right: 0;
       }
     }
 

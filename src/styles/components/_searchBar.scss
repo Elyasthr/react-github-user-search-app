@@ -11,6 +11,9 @@
   @include media-min("tablet") {
     width: 573px;
   }
+  @include media-min("desktop") {
+    width: 730px;
+  }
 
   .input-search{
     width: 191px;
@@ -34,12 +37,18 @@
       font-size: 16px;
       line-height: 24px;
     }
+    @include media-min("desktop") {
+      width: 550px;
+    }
   }
 
   .input-search-bis{
     width: 100px !important;
     @include media-min("tablet") {
       width: 280px !important;
+    }
+    @include media-min("desktop") {
+      width: 450px !important;
     }
   }
 
