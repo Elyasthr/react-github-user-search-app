@@ -12,9 +12,6 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -37,14 +34,22 @@ Users should be able to:
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
+- React Hook
+- Axios - Promise based HTTP client
+- Node Sass
 - Mobile-first workflow
-- Sass 
 
 ### What I learned
 
-Complete at the end of the project
+- How to change parent state from within a child component 
+- Filter an object array
+- Switch themes without using "Context"
+- CSS tips
 
 ### Continued development
 
-Complete at the end of the project
+- Optimize performance by limiting components render
+- Make twitter and company information all be links
+- Have the correct color scheme chosen for them based on their computer preferences using `prefers-color-scheme` in CSS.
+
 
