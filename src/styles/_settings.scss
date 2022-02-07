@@ -94,6 +94,15 @@ h5{
   font-weight: $font-reg;
   font-size: 13px;
   line-height: 19px;
+  @include media-min("tablet") {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  @include media-min("desktop") {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 p{

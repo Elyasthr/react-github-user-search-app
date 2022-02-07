@@ -6,14 +6,12 @@
   background-color: var(--componentsColor);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: var(--boxShadow-searchBar);
+  @include media-min("tablet") {
+    width: 573px;
+  }
 
-  // form{
-  //   display: flex;
-  //   align-items: center;
-  // }
-  
   .input-search{
     width: 191px;
     height: 25px;
@@ -21,7 +19,7 @@
     border: none;
     font-weight: $font-reg;
     font-size: 13px;
-    line-height: 25px;
+    line-height: 20px;
     color: var(--textColor-2);
     background-color: var(--componentsColor);
     &::placeholder{
@@ -31,16 +29,27 @@
     &:focus{
       outline:none!important;
     }
+    @include media-min("tablet") {
+      width: 380px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   .input-search-bis{
     width: 100px !important;
+    @include media-min("tablet") {
+      width: 280px !important;
+    }
   }
 
   .not-found{
     font-size: 11px;
     font-weight: $font-bold;
     color: #F74646;
+    @include media-min("tablet") {
+      font-size: 15px;
+    }
   }
 
   &:hover{
@@ -62,6 +71,12 @@
     font-size: 14px;
     line-height: 21px;
     text-align: center;
+    @include media-min("tablet") {
+      width: 106px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &:hover{

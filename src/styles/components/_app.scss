@@ -3,22 +3,38 @@ main{
   min-height: 100vh;
   background-color: var(--backgroundColor);
 
+  @include media-min("tablet") {
+    max-width: 1439px;
+  }
+  @include media-min("desktop") {
+    max-width: none;
+  }
+
   .container{
     width: 327px;
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+
+    @include media-min("tablet") {
+      width: 573px;
+      padding: 140px 0 236px 0;
+    }
+    @include media-min("desktop") {
+      width: 730px;
+      padding: 144px 0 145px 0;
+    }
   }
 
   .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 31px 0;
+    padding: 0 0 36px 0;
     .logo{
       color: var(--textColor-1);
       font-weight: $font-bold;
