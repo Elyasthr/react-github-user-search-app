@@ -3,6 +3,8 @@ main{
   min-height: 100vh;
   background-color: var(--backgroundColor);
 
+  transition: all 500ms;
+
   @include media-min("tablet") {
     max-width: 1439px;
   }

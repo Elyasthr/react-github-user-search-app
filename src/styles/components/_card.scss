@@ -6,6 +6,7 @@
   border-radius: 15px;
   background-color: var(--componentsColor);
   box-shadow: var(--boxShadow-searchBar);
+  
   @include media-min("tablet") {
     width: 573px;
     padding: 40px;
